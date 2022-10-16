@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class PersonInfoController {
 
     @GetMapping("/{personId}")
-    public PersonInfo getPersonInfoById(@PathVariable("/{personId}") int personId) {
+    public PersonInfo getPersonInfoById(@PathVariable("personId") int personId) {
         PersonInfo p1 = new PersonInfo(1, "Anek", 65.2, 1.82);
         PersonInfo p2 = new PersonInfo(2, "Seeta", 55.1, 1.7);
         PersonInfo p3 = new PersonInfo(3, "Kush", 75, 1.85);
